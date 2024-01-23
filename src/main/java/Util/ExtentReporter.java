@@ -13,7 +13,7 @@ public class ExtentReporter extends TestBase {
     public static ExtentReports generateExtentReports(){
 
         ExtentReports extentReports = new ExtentReports();
-        File extentReportsFile = new File(System.getProperty("user.dir")+"/src/main/java/Report/ExtentReports/extentReports.html");
+        File extentReportsFile = new File(System.getProperty("user.dir")+"/src/main/java/Report/extentReports.html");
         ExtentSparkReporter sparkReporter = new ExtentSparkReporter(extentReportsFile);
         sparkReporter.config().setTheme(Theme.DARK);
         sparkReporter.config().setReportName("GajiGesa UI-Automation Report");
@@ -23,7 +23,7 @@ public class ExtentReporter extends TestBase {
         extentReports.setSystemInfo("Application URL", prop.getProperty("URL"));
         extentReports.setSystemInfo("Browser Name", prop.getProperty("Browser"));
        return  extentReports;
-
+s
 
 
     }
